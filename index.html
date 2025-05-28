@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surprise pour Aude ! 💌</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Conteneur principal -->
+    <div class="envelope-container">
+        <!-- Nuages animés -->
+        <div class="clouds-container">
+            <div class="cloud cloud-1"></div>
+            <div class="cloud cloud-2"></div>
+            <div class="cloud cloud-3"></div>
+        </div>
+
+        <!-- Confetti -->
+        <div id="confetti-container"></div>
+
+        <div class="container-fluid h-100 d-flex align-items-center justify-content-center">
+            <div class="text-center">
+                <!-- Bouton retour -->
+                <button class="btn btn-outline-pink position-absolute top-0 start-0 m-4" onclick="goBack()">
+                    <i class="fas fa-arrow-left me-2"></i>
+                    Retour
+                </button>
+
+                <!-- Titre -->
+                <h1 class="display-3 fw-bold text-pink mb-5 animate-pulse">
+                    Une surprise pour Aude ! 💌
+                </h1>
+
+                <!-- Enveloppe -->
+                <div class="envelope-wrapper mb-5">
+                    <div class="envelope" id="envelope" onclick="openEnvelope()">
+                        <div class="envelope-back"></div>
+                        <div class="envelope-front">
+                            <div class="heart-center">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="envelope-flap"></div>
+                        <div class="click-text" id="clickText">
+                            <p class="text-white fw-bold fs-5">Clique pour ouvrir !</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lettre -->
+                <div class="card letter-card mx-auto" id="letterCard" style="max-width: 800px; display: none;">
+                    <div class="card-body p-5">
+                        <div class="text-center mb-4">
+                            <i class="fas fa-sparkles fa-3x text-pink mb-3 animate-spin"></i>
+                            <h2 class="display-5 fw-bold text-pink mb-4">Ma chère Aude 💖</h2>
+                        </div>
+
+                        <div class="letter-content">
+                            <p class="fs-5 text-pink fw-semibold mb-4">
+                                🌟 Aujourd'hui, les étoiles brillent plus fort car c'est ton anniversaire ! 🌟
+                            </p>
+
+                            <p class="fs-6 mb-4">
+                                Chère Aude, en cette journée si spéciale, je voulais te dire à quel point tu es extraordinaire. 
+                                Ton sourire illumine chaque jour et ta présence rend le monde plus beau.
+                            </p>
+
+                            <p class="fs-6 mb-3">Que cette nouvelle année de ta vie soit remplie de :</p>
+
+                            <ul class="list-unstyled fs-6 mb-4">
+                                <li class="mb-2">✨ Moments magiques et inoubliables</li>
+                                <li class="mb-2">🌈 Rires et joie sans fin</li>
+                                <li class="mb-2">💫 Rêves qui se réalisent</li>
+                                <li class="mb-2">🌸 Amour et bonheur à profusion</li>
+                                <li class="mb-2">🎭 Aventures extraordinaires</li>
+                            </ul>
+
+                            <p class="fs-5 text-pink fw-semibold mb-4">
+                                Tu mérites tout le bonheur du monde, Aude ! 💕
+                            </p>
+
+                            <p class="text-center display-6 fw-bold text-rose mb-4">
+                                JOYEUX ANNIVERSAIRE ! 🎉🎂🎈
+                            </p>
+
+                            <div class="text-center">
+                                <p class="fs-6 text-pink fst-italic">Avec tout mon amour et mes meilleurs vœux ❤</p>
+                            </div>
+
+                            <!-- Cœurs décoratifs -->
+                            <div class="text-center mt-4">
+                                <i class="fas fa-heart text-pink mx-1 animate-pulse"></i>
+                                <i class="fas fa-heart text-pink mx-1 animate-pulse"></i>
+                                <i class="fas fa-heart text-pink mx-1 animate-pulse"></i>
+                                <i class="fas fa-heart text-pink mx-1 animate-pulse"></i>
+                                <i class="fas fa-heart text-pink mx-1 animate-pulse"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="envelope-script.js"></script>
+</body>
+</html>
